@@ -1,14 +1,3 @@
-Select *
-FROM PortfolioProject..CovidDeaths$
-ORDER BY 3,4
-
-
--- Selecting Data I will be using
-
-Select location, date, total_cases, new_cases, total_deaths, population
-FROM PortfolioProject..CovidDeaths$
-ORDER BY 3,4
-
 -- Looking at Total Cases vs Total Deaths
 
 Select location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 AS Death_Percentage
